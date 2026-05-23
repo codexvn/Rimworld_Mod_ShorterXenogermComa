@@ -2,14 +2,17 @@
 
 移除 RimWorld 异种胚芽植入后的昏迷时间，殖民者植入后立即恢复。
 
-## 功能
+## 原理
 
-将 `XenogerminationComa` hediff 的 `disappearsAfterTicks` 从原版的 1.5~3 天改为 1 tick，昏迷即刻消失。
+游戏在手术完成时通过 `SurgeryOutcome_HediffWithDuration.Apply()` 覆写 coma hediff 的 `ticksToDisappear`，基于手术质量曲线计算——原版约 2 天。
+
+本 mod 通过 Harmony patch 拦截该方法，在 `XenogerminationComa` 被添加后立即将 `ticksToDisappear` 强制设为 1，昏迷即刻结束。
 
 ## 兼容
 
 - 游戏版本：1.6
-- 纯 XML patch，无 C# 代码，兼容所有不含 `XenogerminationComa` 改动的 mod
+- 需要 Biotech DLC
+- 纯 Harmony patch，无 XML 覆盖，与其他 mod 兼容
 
 ## 安装
 
