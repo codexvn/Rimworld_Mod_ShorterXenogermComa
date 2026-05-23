@@ -4,12 +4,12 @@
   <author>codexvn</author>
   <packageId>codexvn.ShorterXenogermComa</packageId>
   <description>
-    移除异种胚芽植入后的昏迷时间。
+    移除异种胚芽植入后的昏迷时间，植入后立即苏醒。
 
-    原版昏迷持续约 1.5 ~ 3 天，本 mod 将昏迷 hediff 的消失时间改为 1 tick，
-    殖民者植入异种胚芽后立即恢复行动。
+    同时覆盖手术植入（ImplantXenogerm）与血族"异种植入"能力（ReimplantXenogerm）两条路径。
+    纯 Harmony patch，无 XML 覆盖，与其他 mod 兼容。
 
-    兼容所有不含 XenogerminationComa hediff 改动的 mod。
+    需要 Biotech DLC 与 Harmony。
   </description>
   <supportedVersions>
     <li>1.6</li>
