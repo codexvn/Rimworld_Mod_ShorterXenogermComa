@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>异种胚芽昏迷缩短</name>
+  <author>codexvn</author>
+  <packageId>codexvn.ShorterXenogermComa</packageId>
+  <description>
+    缩短异种胚芽植入后的昏迷时间。
+
+    原版昏迷持续约 1.5 ~ 3 天，本 mod 将其缩短为 12 小时 ~ 1 天，
+    让殖民者更快恢复工作，减少改造流程的中断时间。
+
+    兼容所有不含 XenogerminationComa hediff 改动的 mod。
+  </description>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+</ModMetaData>
